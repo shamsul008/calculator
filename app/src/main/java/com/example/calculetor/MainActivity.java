@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         btnDot = (Button) findViewById(R.id.btnDot);
         btn0 = (Button) findViewById(R.id.btn0);
         btn1 = (Button) findViewById(R.id.btn1);
@@ -111,10 +110,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnC:
                 setText();
-
                 a=b=result=counter=0;
                 break;
-
 
             case R.id.btnAdd:
                 a = Double.parseDouble(tvDisplay.getText().toString());
@@ -164,7 +161,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         setText(b);
                         break;
                 }
-
 
                 setText(result);
                 a = Double.parseDouble(tvDisplay.getText().toString());
