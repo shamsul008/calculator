@@ -54,10 +54,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
+        btn4.setOnClickListener(this);
+        btn5.setOnClickListener(this);
+        btn6.setOnClickListener(this);
+        btn7.setOnClickListener(this);
+        btn8.setOnClickListener(this);
+        btn9.setOnClickListener(this);
+        btnC.setOnClickListener(this);
+        btnDot.setOnClickListener(this);
+
         btnAdd.setOnClickListener(this);
-        btnEql.setOnClickListener(this);
         btnSub.setOnClickListener(this);
         btnMul.setOnClickListener(this);
+        btnDiv.setOnClickListener(this);
+        btnEql.setOnClickListener(this);
 
     }  // end of on create method
 
@@ -78,13 +88,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn3:
                 setText("3");
                 break;
+            case R.id.btn4:
+                setText("4");
+                break;
+            case R.id.btn5:
+                setText("5");
+                break;
+            case R.id.btn6:
+                setText("6");
+                break;
+            case R.id.btn7:
+                setText("7");
+                break;
+            case R.id.btn8:
+                setText("8");
+                break;
+            case R.id.btn9:
+                setText("9");
+                break;
+            case R.id.btnDot:
+                setText(".");
+                break;
+            case R.id.btnC:
+                setText();
+
+                a=b=result=counter=0;
+                break;
+
+
+
+
             case R.id.btnAdd:
                 a = Double.parseDouble(tvDisplay.getText().toString());
                 setText("+");
                 setText();
                 flag = OperationFlag.Add;
                 break;
-
             case R.id.btnSub:
                 a = Double.parseDouble(tvDisplay.getText().toString());
                 setText("-");
@@ -96,6 +135,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setText("*");
                 setText();
                 flag = OperationFlag.Mul;
+                break;
+            case R.id.btnDiv:
+                a = Double.parseDouble( tvDisplay.getText().toString());
+                setText("/");
+                setText();
+                flag = OperationFlag.Div;
                 break;
             case R.id.btnEql:
                 if (counter == 0)
@@ -112,6 +157,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         break;
                     case Mul:
                         result = a * b;
+                        break;
+                    case Div:
+                        result = a / b;
                         break;
                     default:
                         setText();
