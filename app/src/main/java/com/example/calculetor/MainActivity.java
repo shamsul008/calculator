@@ -161,7 +161,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         setText(b);
                         break;
                 }
-
                 setText(result);
                 a = Double.parseDouble(tvDisplay.getText().toString());
 //                a=b=result=0;
@@ -169,6 +168,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
 
     private void setText(Double num) {
         tvDisplay.setText(String.valueOf(num));
