@@ -116,8 +116,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
 
-
-
             case R.id.btnAdd:
                 a = Double.parseDouble(tvDisplay.getText().toString());
                 setText("+");
