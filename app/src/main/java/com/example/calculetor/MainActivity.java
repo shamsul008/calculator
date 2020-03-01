@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnMul.setOnClickListener(this);
         btnDiv.setOnClickListener(this);
         btnEql.setOnClickListener(this);
-
     }  // end of on create method
 
     int counter = 0;
@@ -112,6 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setText();
                 a=b=result=counter=0;
                 break;
+
 
             case R.id.btnAdd:
                 a = Double.parseDouble(tvDisplay.getText().toString());
