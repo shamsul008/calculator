@@ -169,7 +169,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
     private void setText(Double num) {
         tvDisplay.setText(String.valueOf(num));
         // tvHistory.setText(tvHistory.getText()+num);
